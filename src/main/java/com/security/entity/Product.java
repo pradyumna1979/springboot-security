@@ -8,19 +8,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-@Entity(name="USERS_TBL")
+@Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class User {
+@AllArgsConstructor
+public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int userId;
-    private int age;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private String name;
-    private String email;
-    private String mobile;
-    private String gender;
-    private String nationality;
+    private Integer quantity;
+    private Integer price;
 }

@@ -1,1 +1,1 @@
-insert into users_tbl (user_id,age,email,gender,mobile,name,nationality) values(1,38,'monalisha@gmail.com','F','1234567890','Monalisha','Indian')
+insert into user_info (id, email,name, password, roles) values(0,'Monalisha@gmail.com','Monalisha@gmail.com','Monalisha','ROLE_ADMIN')
