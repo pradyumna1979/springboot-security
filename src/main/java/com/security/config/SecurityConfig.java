@@ -35,7 +35,7 @@ public class SecurityConfig {
         return http
                 .cors().disable()
                 .csrf().disable()
-                .authorizeHttpRequests().requestMatchers("/users/welcome","/users/signup","/h2-console").permitAll()
+                .authorizeHttpRequests().requestMatchers("/users/welcome","/users/signup","/users/multipart").permitAll()
                 .and()
                 .authorizeHttpRequests().requestMatchers("/users/**").authenticated()
                 .and().formLogin().and().build();
